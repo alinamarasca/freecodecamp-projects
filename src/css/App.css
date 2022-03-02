@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#main-header {
+  background-color: #0a0a23;
+  color: white;
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+#main-title {
+  color: #fff;
+}
+
+svg {
+  width: auto;
+  height: 0.8em;
+  margin: 0 2px;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}

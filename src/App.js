@@ -1,23 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import "./css/App.css";
+// import "./sass/App.scss";
+import { FaFreeCodeCamp } from "react-icons/fa";
+import Main from "./components/Main";
+import Tribute from "./pages/tribute/Tribute";
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import LandingPage from "./pages/landing/LandingPage";
+import SurveyForm from "./pages/survey/SurveyForm";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <BrowserRouter>
+        <header id="main-header">
+          <Link to="/" className="view-project-link">
+            <h1 id="main-title">
+              freeCodeCamp <FaFreeCodeCamp />{" "}
+            </h1>
+          </Link>
+
+          <p>Projects made for freeCodeCamp.</p>
+        </header>
+        <Routes>
+          <Route path="/" element={<Main />} />
+          <Route path="/ffc-html-tribute" element={<Tribute />} />
+          <Route path="/ffc-html-landing" element={<LandingPage />} />
+          <Route path="/ffc-html-survey" element={<SurveyForm />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }

@@ -1,0 +1,72 @@
+:root {
+  --accent-survey: palevioletred;
+}
+#survey-form {
+  font-size: 1.2rem;
+  line-height: 160%;
+  background-color: rgb(26, 38, 61);
+  width: 100%;
+  height: auto;
+  color: #fff;
+  font-family: sans-serif;
+}
+#intro {
+  padding: 1em 0;
+  text-align: center;
+  color: var(--accent-survey);
+}
+#intro p {
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 300;
+  opacity: 0.6;
+}
+#title {
+  text-transform: uppercase;
+}
+#wrapper {
+  width: 80%;
+  max-width: 500px;
+  margin: auto;
+}
+
+form {
+  margin: auto;
+}
+
+.form-group {
+  background-color: rgba(255, 255, 255, 0.4);
+  margin-bottom: 0.5rem;
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+p {
+  font-weight: 600;
+}
+.submit {
+  width: 100%;
+  border: none;
+  background-color: palevioletred;
+  padding: 0.5em 0;
+  font-size: 1.2rem;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+input,
+select,
+textarea {
+  padding: 0.2em 0.4em;
+  font-size: 1.2rem;
+}
+
+textarea {
+  height: 200px;
+}
+
+span {
+  font-size: 0.8em;
+}
