@@ -12,7 +12,7 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <header id="main-header">
-          <Link to="/" className="view-project-link">
+          <Link to="/freecodecamp-projects" className="view-project-link">
             <h1 id="main-title">
               freeCodeCamp <FaFreeCodeCamp />{" "}
             </h1>
@@ -21,7 +21,7 @@ function App() {
           <p>Projects made for freeCodeCamp.</p>
         </header>
         <Routes>
-          <Route path="/" element={<Main />} />
+          <Route path="/freecodecamp-projects" element={<Main />} />
           <Route path="/ffc-html-tribute" element={<Tribute />} />
           <Route path="/ffc-html-landing" element={<LandingPage />} />
           <Route path="/ffc-html-survey" element={<SurveyForm />} />
